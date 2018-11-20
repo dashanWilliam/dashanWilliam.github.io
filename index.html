@@ -3,29 +3,144 @@
   <head>
     <meta charset="utf-8">
     <title>Feedback Submission</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
+
   <body>
-    <h1>Please use this webpage to give me feedback on my lesson</h1>
+    <header class="navbar">
+      <section class="navbar-section">
+
+      </section>
+      <section class="navbar-center">
+        <i class="icon icon-2x icon-message"></i>
+      </section>
+      <section class="navbar-section">
+
+      </section>
+    </header>
+
+
+    <div class="container">
+    <h1>Feedback for William's lesson</h1>
+    <p>Please use this form to tell me how I did with my demo class. I will give everyone some candy if at least 90% of you give me feedback.</p>
+
+    <div class="form-group">
     <form action="https://formspree.io/dashanWilliam@hotmail.com" method="POST" />
-      <h3>How much did you understand?</h3>
-      <input type="radio" name="understand" value="1">1
-      <input type="radio" name="understand" value="2">2
-      <input type="radio" name="understand" value="3" checked>3
-      <input type="radio" name="understand" value="4">4
-      <input type="radio" name="understand" value="5">5
-      <br>
-      <h3>How interesting did you find the lesson?</h3>
-      <input type="radio" name="interest" value="1">1
-      <input type="radio" name="interest" value="2">2
-      <input type="radio" name="interest" value="3" checked>3
-      <input type="radio" name="interest" value="4">4
-      <input type="radio" name="interest" value="5">5
-      <br>
-      <h3>Anything else you would like to say? (This is anonymous, I won't know who you are)</h3>
-      <input type="text" name="textbox">
+      <div class="column col-12">
+        <label class="form-label">How much did you understand?</label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="understand" value="1"><i class="form-icon"></i>1
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="understand" value="2"><i class="form-icon"></i>2
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="understand" value="3" checked><i class="form-icon"></i>3
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="understand" value="4"><i class="form-icon"></i>4
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="understand" value="5"><i class="form-icon"></i>5
+        </label>
+      </div>
 
+      <div class="column col-12">
+        <label class="form-label">How interesting did you find the lesson?</label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="interest" value="1"><i class="form-icon"></i>1
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="interest" value="2"><i class="form-icon"></i>2
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="interest" value="3" checked><i class="form-icon"></i>3
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="interest" value="4"><i class="form-icon"></i>4
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="interest" value="5"><i class="form-icon"></i>5
+        </label>
+      </div>
 
-      <input type="submit" value="Submit">
+      <div class="column col-12">
+        <label class="form-label">Was the information organized and presented in a clear way?</label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="organization" value="1"><i class="form-icon"></i>1
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="organization" value="2"><i class="form-icon"></i>2
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="organization" value="3" checked><i class="form-icon"></i>3
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="organization" value="4"><i class="form-icon"></i>4
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="organization" value="5"><i class="form-icon"></i>5
+        </label>
+      </div>
+
+      <div class="column col-12">
+        <label class="form-label">Quality of the PPT</label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="pptQuality" value="1"><i class="form-icon"></i>1
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="pptQuality" value="2"><i class="form-icon"></i>2
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="pptQuality" value="3" checked><i class="form-icon"></i>3
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="pptQuality" value="4"><i class="form-icon"></i>4
+        </label>
+        <label class="form-radio form-inline">
+          <input type="radio" name="pptQuality" value="5"><i class="form-icon"></i>5
+        </label
+      </div>
+
+      <div class="column col-12">
+        <label class="form-label">Did I speak too fast?</label>
+        <label class="form-radio">
+          <input type="radio" name="speed" value="1"><i class="form-icon"></i>Yes
+        </label>
+        <label class="form-radio">
+          <input type="radio" name="speed" value="2" required><i class="form-icon"></i>No
+        </label>
+      </div>
+
+      <div class="column col-12">
+        <label class="form-label">Would you like me to continue teaching these kinds of lessons?</label>
+        <label class="form-radio">
+          <input type="radio" name="continue" value="1"><i class="form-icon"></i>Yes
+        </label>
+        <label class="form-radio">
+          <input type="radio" name="continue" value="2" required><i class="form-icon"></i>No
+        </label>
+      </div>
+
+      <div class="column col-12">
+        <label class="form-label" for="textAreaContent">Additional comments (<em>optional</em>)</label>
+        <textarea id="textAreaContent" class="form-input" rows="4" cols="50" name="comments"></textarea>
+      </div>
+
+      <div class="column col-12">
+        <input id="submitBTN" class="btn btn-lg" type="submit" value="Submit">
+      </div>
+
     </form>
+    </div>
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/checker.js"></script>
+
   </body>
 </html>
