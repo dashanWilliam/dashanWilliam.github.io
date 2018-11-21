@@ -12,9 +12,4 @@ $( document ).ready(function() {
       $("#submitBTN").addClass("btn-primary");
     };
   })
-      if ($("input:radio[name='continue']").is(":checked")){
-        alert('ayy lmao');
-      };
-
-
 });
