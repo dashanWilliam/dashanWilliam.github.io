@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <meta charset="utf-8">
     <title>Feedback Submission</title>
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="css/spectre.min.css">
+    <link rel="stylesheet" href="css/spectre-exp.min.css">
+    <link rel="stylesheet" href="css/spectre-icons.min.css">
     <link rel="stylesheet" href="css/index.css">
   </head>
 
@@ -22,9 +26,11 @@
     </header>
 
 
-    <div class="container">
-    <h1>Feedback for William's lesson</h1>
-    <p>Please use this form to tell me how I did with my demo class. I will give everyone some candy if at least 90% of you give me feedback.</p>
+    <div class="container grid-md">
+    <div class="column col-sm-">
+      <h1>Feedback for William's lesson</h1>
+      <p>Please use this form to tell me how I did with my demo class. I will give everyone some candy if at least 90% of you give me feedback.</p>
+    </div>
 
     <div class="form-group">
     <form action="https://formspree.io/dashanWilliam@hotmail.com" method="POST" />
@@ -101,7 +107,7 @@
         </label>
         <label class="form-radio form-inline">
           <input type="radio" name="pptQuality" value="5"><i class="form-icon"></i>5
-        </label
+        </label>
       </div>
 
       <div class="column col-12">
@@ -117,10 +123,10 @@
       <div class="column col-12">
         <label class="form-label">Would you like me to continue teaching these kinds of lessons?</label>
         <label class="form-radio">
-          <input type="radio" name="continue" value="1"><i class="form-icon"></i>Yes
+          <input type="radio" name="continue" value="1"><i class="contRadio form-icon"></i>Yes
         </label>
         <label class="form-radio">
-          <input type="radio" name="continue" value="2" required><i class="form-icon"></i>No
+          <input type="radio" name="continue" value="2" required><i class="contRadio form-icon"></i>No
         </label>
       </div>
 
@@ -136,6 +142,8 @@
     </form>
     </div>
     </div>
+
+    <footer></footer>
 
 
 

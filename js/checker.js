@@ -6,8 +6,15 @@ $( document ).ready(function() {
   $("h1").click(function(event){
     $(this).css('color', 'red');
   });
-  $('html').click(function(){
-    alert('test');
-  });
+
+  $("input").on("click", function () {
+    if ($("input:radio[name='continue']").is(":checked") && $("input:radio[name='speed']").is(":checked")){
+      $("#submitBTN").addClass("btn-primary");
+    };
+  })
+      if ($("input:radio[name='continue']").is(":checked")){
+        alert('ayy lmao');
+      };
+
 
 });
